@@ -19,7 +19,6 @@
 //struct for representing the host
 struct host{
     struct job_node* batch;
-    int hostID;
     pthread_mutex_t host_lock;
 };
 
@@ -62,7 +61,6 @@ void host_destroy(host** host){
 */
 void host_request_instance(host* h, struct job_node* batch){
     printf("LoadBalancer: Received batch and spinning up new instance. \n");
-    printf("HostID: %d\n",h->hostID);
     struct job_node* current = batch;
     while(current != NULL){
         struct job_node* next = current->next;

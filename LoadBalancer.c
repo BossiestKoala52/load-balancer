@@ -53,6 +53,7 @@ void balancer_destroy(balancer** lb){
         free(current);
         current = next;
     }
+    pthread_mutex_destroy(&lb[0]->list_lock);
 }
 
 /**
