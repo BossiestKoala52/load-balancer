@@ -2,9 +2,11 @@
  * Program to simulate multiple users simultaneously requesting work (a "job")
  * to be carried by a load balancing server and returned to the user. Job is to
  * compute the square of a number.
- * 
- * @author Khan, Acuna
- * @version 1.2
+ *
+ * Completion time: -1
+ *
+ * @author Nicholas Jones, Khan, Acuna
+ * @version 13Sep23
  */
 #define _POSIX_C_SOURCE 199506L
 

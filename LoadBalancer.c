@@ -1,3 +1,14 @@
+/**
+ * Program to simulate multiple users simultaneously requesting work (a "job")
+ * to be carried by a load balancing server and returned to the user. Job is to
+ * compute the square of a number.
+ *
+ * Completion time: 2hours
+ *
+ * @author Nicholas Jones, Khan, Acuna
+ * @version 13Sep23
+ */
+
 #include <pthread.h>
 #include <stdlib.h>
 #include <stdio.h>
@@ -74,7 +85,9 @@ void balancer_add_job(balancer* lb, int user_id, int data, int* data_return){
         lb->jobCount++;
     pthread_mutex_unlock(&lb->list_lock);
     if(lb->jobCount == lb->batchSize) {
-        host_request_instance(host_create(), lb->batchHead);
+        host *host1 = host_create();
+        host_request_instance(host1, lb->batchHead);
+        host_destroy(&host1);
     }
 }
 
