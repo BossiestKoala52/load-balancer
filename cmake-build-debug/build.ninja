@@ -55,14 +55,14 @@ build CMakeFiles/untitled3.dir/User.c.o: C_COMPILER__untitled3_unscanned_Debug /
   OBJECT_DIR = CMakeFiles/untitled3.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled3.dir
 
-build CMakeFiles/untitled3.dir/InstanceHost.c.o: C_COMPILER__untitled3_unscanned_Debug /home/vboxuser/CLionProjects/homework7/InstanceHost.c || cmake_object_order_depends_target_untitled3
-  DEP_FILE = CMakeFiles/untitled3.dir/InstanceHost.c.o.d
+build CMakeFiles/untitled3.dir/JonesInstanceHost.c.o: C_COMPILER__untitled3_unscanned_Debug /home/vboxuser/CLionProjects/homework7/JonesInstanceHost.c || cmake_object_order_depends_target_untitled3
+  DEP_FILE = CMakeFiles/untitled3.dir/JonesInstanceHost.c.o.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles/untitled3.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled3.dir
 
-build CMakeFiles/untitled3.dir/LoadBalancer.c.o: C_COMPILER__untitled3_unscanned_Debug /home/vboxuser/CLionProjects/homework7/LoadBalancer.c || cmake_object_order_depends_target_untitled3
-  DEP_FILE = CMakeFiles/untitled3.dir/LoadBalancer.c.o.d
+build CMakeFiles/untitled3.dir/JonesLoadBalancer.c.o: C_COMPILER__untitled3_unscanned_Debug /home/vboxuser/CLionProjects/homework7/JonesLoadBalancer.c || cmake_object_order_depends_target_untitled3
+  DEP_FILE = CMakeFiles/untitled3.dir/JonesLoadBalancer.c.o.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles/untitled3.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled3.dir
@@ -75,7 +75,7 @@ build CMakeFiles/untitled3.dir/LoadBalancer.c.o: C_COMPILER__untitled3_unscanned
 #############################################
 # Link the executable untitled3
 
-build untitled3: C_EXECUTABLE_LINKER__untitled3_Debug CMakeFiles/untitled3.dir/User.c.o CMakeFiles/untitled3.dir/InstanceHost.c.o CMakeFiles/untitled3.dir/LoadBalancer.c.o
+build untitled3: C_EXECUTABLE_LINKER__untitled3_Debug CMakeFiles/untitled3.dir/User.c.o CMakeFiles/untitled3.dir/JonesInstanceHost.c.o CMakeFiles/untitled3.dir/JonesLoadBalancer.c.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/untitled3.dir
   POST_BUILD = :

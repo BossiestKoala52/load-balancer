@@ -31,7 +31,6 @@ struct job_node; //defined in LoadBalancer
 */
 host* host_create(){
     host* host1 = (struct host*)malloc(sizeof(struct host));
-    host1->hostID++;
     return host1;
 }
 
